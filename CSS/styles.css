@@ -1,0 +1,177 @@
+/* ============================= */
+/* RESET */
+/* ============================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Cormorant Garamond", serif;
+    background-color: #fff5f5;
+    color: #cc007e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Playfair Display SC", serif;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.dw-header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: #7a004b;
+}
+
+/* Layout */
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.8rem 2rem;
+}
+
+/* Logo */
+
+.logo{
+    text-decoration: none;
+}
+
+.logo img{
+    height: 50px;
+}
+
+/* Navegación */
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #ff1fa9;
+}
+
+/* Mi cuenta */
+
+.MiCuenta a{
+    color: #7a004b;
+    background: #ff1fa9;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.MiCuenta a:hover{
+    background: #a0247b;
+    color: #ff1fa9;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.dw-footer{
+    background-color: #7a004b;
+    padding: 4rem 0 2rem 0;
+}
+
+/* Contenido */
+
+.footer-danceworld{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+
+    gap: 2rem;
+
+    align-items: center;
+}
+
+/* Logo */
+
+.footer-dwlogo{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-dwlogo img{
+    width: 220px;
+}
+
+/* Títulos */
+
+.dw-footer h5{
+    color: #ff1fa9;
+
+    font-size: 1.1rem;
+
+    letter-spacing: 0.2em;
+
+    margin-bottom: 1rem;
+}
+
+/* Texto */
+
+.dw-footer p{
+    color: white;
+}
+
+/* Links */
+
+.dw-footer ul{
+    list-style: none;
+}
+
+.dw-footer li{
+    margin-bottom: 0.5rem;
+}
+
+.dw-footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.dw-footer a:hover{
+    color: #ff1fa9;
+}
+
+/* Parte inferior */
+
+.footer-world{
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

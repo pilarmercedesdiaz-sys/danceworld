@@ -1,0 +1,183 @@
+/* ============================= */
+/* MAIN */
+/* ============================= */
+
+.bailarines-main{
+    background-color: #e8c8df;
+}
+
+/* ============================= */
+/* INTRO */
+/* ============================= */
+
+.intro-bailarines{
+    text-align: center;
+
+    padding: 110px 20px 140px;
+}
+
+.intro-bailarines h1{
+    font-size: 6rem;
+
+    color: #8c0051;
+
+    margin-bottom: 40px;
+}
+
+.intro-bailarines h2{
+    font-size: 2rem;
+
+    color: #a0005a;
+
+    margin-bottom: 70px;
+
+    letter-spacing: 2px;
+}
+
+.intro-bailarines p{
+    color: #ff5dbf;
+
+    font-size: 1.6rem;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    line-height: 1.3;
+
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* ============================= */
+/* BAILARINES */
+/* ============================= */
+
+.bailarin{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 70px 80px;
+}
+
+.bailarin img{
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+/* ============================= */
+/* TEXTO */
+/* ============================= */
+
+.texto-bailarin{
+    max-width: 750px;
+}
+
+.texto-bailarin h3{
+    font-size: 3.8rem;
+
+    color: #d1008c;
+
+    margin-bottom: 25px;
+}
+
+.texto-bailarin p{
+    color: #ff5dbf;
+
+    font-size: 1.6rem;
+
+    line-height: 1.25;
+
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* ============================= */
+/* ORDEN */
+/* ============================= */
+
+.derecha{
+    text-align: right;
+}
+
+.izquierda{
+    text-align: left;
+}
+
+/* ============================= */
+/* MENSAJE FINAL */
+/* ============================= */
+
+.mensaje-final{
+    text-align: center;
+
+    padding: 180px 20px 120px;
+}
+
+.mensaje-final p{
+    font-size: 3.2rem;
+
+    color: #a0005a;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media(max-width: 950px){
+
+    .intro-bailarines{
+        padding: 80px 20px 100px;
+    }
+
+    .intro-bailarines h1{
+        font-size: 4rem;
+    }
+
+    .intro-bailarines h2{
+        font-size: 1.5rem;
+    }
+
+    .intro-bailarines p{
+        font-size: 1.2rem;
+    }
+
+    .bailarin{
+        flex-direction: column;
+
+        text-align: center !important;
+
+        gap: 35px;
+
+        padding: 50px 25px;
+    }
+
+    .derecha{
+        flex-direction: column-reverse;
+    }
+
+    .bailarin img{
+        width: 240px;
+        height: 240px;
+    }
+
+    .texto-bailarin h3{
+        font-size: 2.5rem;
+    }
+
+    .texto-bailarin p{
+        font-size: 1.2rem;
+    }
+
+    .mensaje-final{
+        padding: 100px 20px 80px;
+    }
+
+    .mensaje-final p{
+        font-size: 2rem;
+    }
+}

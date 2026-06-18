@@ -1,0 +1,243 @@
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero{
+    height: 650px;
+    background-image: url("../imagenes/TripleT.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1400px;
+
+    padding-left: 90px;
+}
+
+.hero-content h1{
+    font-size: 9rem;
+    line-height: .85;
+    color: white;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+}
+
+.hero-content .world{
+    color: #ff1fa9;
+}
+
+.hero-content p{
+    margin-top: 15px;
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+/* ============================= */
+/* ESTILOS */
+/* ============================= */
+
+.estilos{
+    background: #f8dfe8;
+    padding: 70px 60px;
+}
+
+.titulo-estilos{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-estilos h2{
+    color: #ff1fa9;
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.cards-estilos{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 260px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card img{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.card p{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+
+    color: #ff1fa9;
+    font-size: 1.8rem;
+    font-family: "Playfair Display SC", serif;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,.5);
+}
+
+/* ============================= */
+/* ESTADÍSTICAS */
+/* ============================= */
+
+.estadisticas{
+    margin-top: 40px;
+
+    background: linear-gradient(
+        90deg,
+        #a10074,
+        #ff0088
+    );
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    text-align: center;
+}
+
+.estadisticas h3{
+    color: white;
+    font-size: 3rem;
+}
+
+.estadisticas p{
+    color: white;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/* ============================= */
+/* HISTORIA */
+/* ============================= */
+
+.historia{
+    background: #f8dfe8;
+    padding: 90px 20px 120px;
+    text-align: center;
+}
+
+.historia h2{
+    color: #d1008c;
+    font-size: 2.4rem;
+    margin-bottom: 60px;
+
+    font-style: italic;
+    font-weight: 400;
+}
+
+.personajes{
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    flex-wrap: wrap;
+}
+
+.persona{
+    width: 280px;
+    background: white;
+
+    border-radius: 0 0 30px 30px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+
+.persona img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.persona h3{
+    color: #ff1fa9;
+    margin-top: 20px;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.persona p{
+    color: #ff1fa9;
+    margin: 12px 0;
+    font-size: 1.4rem;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px){
+
+    .hero{
+        height: 500px;
+    }
+
+    .hero-content{
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .hero-content h1{
+        font-size: 5rem;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+    }
+
+    .estilos{
+        padding: 50px 20px;
+    }
+
+    .estadisticas{
+        gap: 25px;
+    }
+
+    .personajes{
+        gap: 50px;
+    }
+}
